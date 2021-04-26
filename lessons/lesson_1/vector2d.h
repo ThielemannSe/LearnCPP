@@ -27,7 +27,6 @@ public:
 
     Vector2D operator+ (const Vector2D& v);
 
-    Vector2D addition(const Vector2D& v);
 
     /*
         TODO:   add functions substraction and multiplication 
