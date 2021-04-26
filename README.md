@@ -1,21 +1,13 @@
-# Überschrift
+# Learning CPP!
 
-Absätze werden durch eine Leerzeile voneinander getrennt.
+This is a small course for learning C++.
 
-2ter Absatz. *Kursiv*, **fett**, und `Monospace`.
-Ungeordnete Listen sehen wie folgt aus:
+## Function overloading
 
-* dieses
-* jenes
-* und noch weiteres
+C++ allows to provide multiple definitions for a certain function. This method
+is called ***function overloading***.
 
-## Abschnitt: Zitate
-
-> Blockzitate werden
-> folgendermaßen definiert...
->
-> ... und können auf mehrere Absätze
-> aufgeteilt werden, wenn Sie mögen.
+The following chapter gives a small introduction to this topic.
 
 ## Abschnitt: Tabellen
 
