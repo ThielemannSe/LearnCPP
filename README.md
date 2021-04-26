@@ -2,9 +2,9 @@
 
 This is a small course for learning C++.
 
-## Overloading
 
-## Operator overloading
+
+## Lesson 1 - Operator overloading
 
 C++ allows overloading operators. Operators are methods that are executed when a specific operator (e.g. +, -, *, ...) is used in code.
 There are default methods for standard datatypes like int, double or string for example. When a operator shall be used
@@ -23,3 +23,81 @@ double operator+(/* args */)
     // do something here...
 }
 ```
+
+## Task
+
+1. Try to understand the following example
+2. Extend the Vector2D object by adding methods for multiplication and substraction of two vectors
+
+vector2d.h
+
+```cpp
+#ifndef VECTOR2D_H
+#define VECTOR2D_H
+
+#include <iostream>
+
+class Vector2D
+{
+private:
+    double x, y;
+
+public:
+
+    Vector2D();
+    Vector2D(double x, double y);
+
+    friend std::ostream& operator<< (std::ostream& os, const Vector2D& v);
+
+    /* 
+    Algebraic functions:
+
+    - Addition of two vectors
+    - Substraction of two vectors
+    - Multiplikation of two vectors
+    - Multiplication of vector with some number
+
+    */
+
+    Vector2D operator+ (const Vector2D& v);
+
+    Vector2D addition(const Vector2D& v);
+
+    /*
+        TODO:   add functions substraction and multiplication 
+                of two vectors using operator overloading
+    */
+
+};
+
+#endif
+```
+
+vector.cpp
+
+```cpp
+#include <iostream>
+#include "vector2d.h"
+
+// Default constructor
+Vector2D::Vector2D(): x(0), y(0) {};
+
+// Constructor taking two doubles as arguments
+Vector2D::Vector2D(double x, double y): x(x), y(y) {}; 
+
+// Overloading << operator
+std::ostream& operator<< (std::ostream& os, const Vector2D& v)
+{
+    os << "Vector( " << v.x << " " << v.y << " )";
+    return os;
+}
+
+
+// Addition of two vectors using operator overlaoding 
+Vector2D Vector2D::operator+ (const Vector2D& v)
+{
+    return Vector2D(this->x + v.x, this->y + v.y);   
+}
+```
+
+The code above can be downloaded here: https://github.com/ThielemannSe/LearnCPP/tree/master/lessons/lesson_1
