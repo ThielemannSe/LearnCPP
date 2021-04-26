@@ -9,13 +9,16 @@ is called ***function overloading***.
 
 The following chapter gives a small introduction to this topic.
 
-C++ Syntax Highlighting
+
+Let's create a function for printing an integer to the console.
 
 ```cpp
 
-    int main()
+    using namespace std;
+
+    void print(int a)
     {
-        return 0;
+        cout << a << endl;
     }
 
 
