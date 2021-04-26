@@ -5,7 +5,7 @@ For W.J. and L.Q. :)
 
 
 
-# Lesson 1 - Operator overloading
+## Lesson 1 - Operator overloading
 
 C++ allows overloading operators. Operators are methods that are executed when a specific operator (e.g. +, -, *, ...) is used in code.
 There are default methods for standard datatypes like int, double or string for example. When a operator shall be used
@@ -25,7 +25,7 @@ double operator+(/* args */)
 }
 ```
 
-## Task
+### Task
 
 1. Try to understand the following example
 2. Extend the Vector2D object by adding methods for multiplication and substraction of two vectors
