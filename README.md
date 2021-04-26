@@ -1,10 +1,11 @@
 # Learning CPP!
 
 This is a small course for learning C++.
+For W.J. and L.Q. :)
 
 
 
-## Lesson 1 - Operator overloading
+# Lesson 1 - Operator overloading
 
 C++ allows overloading operators. Operators are methods that are executed when a specific operator (e.g. +, -, *, ...) is used in code.
 There are default methods for standard datatypes like int, double or string for example. When a operator shall be used
